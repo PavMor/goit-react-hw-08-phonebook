@@ -5,7 +5,7 @@ const bubblingAnimate = keyframes`
    0%{
         transform: translateY(0) rotate(0deg);
         opacity: 1;
-        border-radius: 50;
+        border-radius: 50%;
     }
 
     100%{
