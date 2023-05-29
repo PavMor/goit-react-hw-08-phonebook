@@ -43,10 +43,10 @@ img {
 }
 
 :root {
-  --accent: #17c563;
+  --accent: #c57717;
   --primary: #282828;
   --secondary: #858585;
-  --bg: rgba(255, 255, 255, 0.2);
+  --bg: rgba(26, 222, 71, 0.2);
   --main-shadow: -2px -2px 5px #ffffff, 3px 3px 5px rgba(0, 0, 0, 0.1);
   --inset-shadow: inset -2px -2px 5px #ffffff, inset 3px 3px 5px rgba(0, 0, 0, 0.1);
   --good: rgba(50, 237, 13, 0.7);
