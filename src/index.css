@@ -12,7 +12,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 
   /* background: linear-gradient(180deg, #a8edea 0%, #fed6e3 100%); */
-  background: linear-gradient(180deg, #b3c71b 0%, #2996af 100%);
+  background: linear-gradient(180deg, #6a9bd8 0%, #ffb6cd 100%);
 
   min-height: 100vh;
   display: flex;
@@ -43,15 +43,15 @@ img {
 }
 
 :root {
-  --accent: #9432ad;
+  --accent: #17c563;
   --primary: #282828;
   --secondary: #858585;
   --bg: rgba(255, 255, 255, 0.2);
   --main-shadow: -2px -2px 5px #ffffff, 3px 3px 5px rgba(0, 0, 0, 0.1);
   --inset-shadow: inset -2px -2px 5px #ffffff, inset 3px 3px 5px rgba(0, 0, 0, 0.1);
-  --good: rgba(16, 87, 229, 0.7);
-  --neutral: rgba(16, 224, 26, 0.7);
-  --bad: rgba(227, 35, 14, 0.7);
+  --good: rgba(50, 237, 13, 0.7);
+  --neutral: rgba(235, 202, 13, 0.7);
+  --bad: rgba(225, 41, 20, 0.7);
 }
 
 #root {
