@@ -1,5 +1,6 @@
 import axios from 'axios';
 import { createAsyncThunk } from '@reduxjs/toolkit';
+import { toast } from 'react-toastify';
 
 const setAuthHeader = token => {
   axios.defaults.headers.common.Authorization = `Bearer ${token}`;
@@ -13,9 +14,9 @@ export const register = createAsyncThunk('auth/register', async (credentials, th
   try {
     const { data } = await axios.post('/users/signup', credentials);
     setAuthHeader(data.token);
-
     return data;
   } catch (error) {
+    toast.error("Something went wrong! Please check the correctness of the entered data");
     return thunkAPI.rejectWithValue(error.message);
   }
 });
@@ -24,9 +25,9 @@ export const logIn = createAsyncThunk('auth/login', async (credentials, thunkAPI
   try {
     const { data } = await axios.post('users/login', credentials);
     setAuthHeader(data.token);
-
     return data;
   } catch (error) {
+    toast.error("Something went wrong! Please check the correctness of the entered data");
     return thunkAPI.rejectWithValue(error.message);
   }
 });

@@ -27,7 +27,7 @@ export const RegisterForm = () => {
   const dispatch = useDispatch();
   const [passwordShown, setPasswordShown] = useState(false);
 
-  const handleSubmit = (values, { resetForm }) => {
+  const handleSubmit = (values) => {
     dispatch(
       register({
         name: values.username,
@@ -35,8 +35,6 @@ export const RegisterForm = () => {
         password: values.password,
       })
     );
-
-    resetForm();
   };
 
   const togglePassword = () => setPasswordShown(!passwordShown);
